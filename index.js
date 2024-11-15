@@ -1,1 +1,4 @@
-console.log("Y000 ?"); 
+document.getElementById("button-addd-todo")
+addEventListener("click", function (){
+    console.log("click");
+});
