@@ -10,14 +10,23 @@
     <h1>Todo List</h1>
     <div class="container">
         <div id="todo-list-container">
+            <h2>Mes Tâches</h2>
             <ul id="todo-list"></ul>
         </div>
-        <div id="todo-actions">
-            <button id="button-add-todo">Ajouter un Todo</button>
-            <button id="supprimer">Supprimer</button>
+        <div id="todo-input-container">
+            <input type="text" id="todo-text-input" placeholder="Nouvelle tâche">
+            <div id="todo-actions">
+                <button id="button-add-todo">Ajouter</button>
+                <button id="supprimer">Supprimer toutes</button>
+            </div>
+        </div>
+        <div id="archive-container">
+            <h2>Archives</h2>
+            <button id="button-toggle-archives">Afficher/Masquer les archives</button>
+            <ul id="archive-list" class="hidden"></ul>
+            <button id="supprimer-archives" class="hidden">Supprimer les archives</button>
         </div>
     </div>
-
     <script src="index.js"></script>
 </body>
 </html>
